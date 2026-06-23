@@ -1,0 +1,12 @@
+{
+  "name": "split-marketing",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Split public marketing site (static HTML/CSS/JS, bilingual AR/EN)",
+  "scripts": {
+    "dev": "npx --yes serve -l 4000 .",
+    "build": "echo \"static site — nothing to build\"",
+    "lint": "echo \"no lint\"",
+    "test": "echo \"no tests\""
+  }
+}

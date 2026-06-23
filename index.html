@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#262625" />
+  <title>سبليت | استأجر الآن، وادفع لاحقاً — Split</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.desc"
+        content="سبليت منصة عقارية سعودية تتيح لك تقسيم إيجارك السنوي إلى دفعات شهرية ميسّرة، بينما يحصل المالك على إيجار السنة كاملاً مقدماً." />
+
+  <link rel="icon" type="image/png" href="assets/logos/logomark-black.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">تخطَّ إلى المحتوى</a>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announce" role="region" aria-label="Announcement">
+    <div class="container announce-inner">
+      <p>
+        <span data-i18n="announce.text">سبليت يصل إلى السعودية — قسّم إيجارك إلى 12 دفعة شهرية ميسّرة.</span>
+        <a class="announce-link" href="https://app.split.sa" data-i18n="announce.cta">ابدأ الآن</a>
+      </p>
+      <button class="announce-dismiss" id="announceClose" type="button" aria-label="إغلاق" data-i18n-attr="aria-label" data-i18n="announce.dismiss">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Split">
+        <img class="brand-logo brand-logo--dark" src="assets/logos/logo-horizontal-black.svg" alt="Split" />
+        <img class="brand-logo brand-logo--light" src="assets/logos/logo-horizontal-white.svg" alt="Split" />
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="#how" data-i18n="nav.how">كيف يعمل</a>
+        <a href="#calculator" data-i18n="nav.calculator">احسب قسطك</a>
+        <a href="#why" data-i18n="nav.why">لماذا سبليت</a>
+        <a href="owners.html" data-i18n="nav.owners">للملاك</a>
+        <a href="#about" data-i18n="nav.about">من نحن</a>
+        <a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a>
+        <div class="nav-actions">
+          <button class="lang-toggle" id="langToggleMobile" type="button">
+            <span data-i18n="lang.toggle">English</span>
+          </button>
+          <a class="btn btn-ghost" href="https://app.split.sa" data-i18n="cta.signin">تسجيل الدخول</a>
+          <a class="btn btn-primary" href="https://app.split.sa" data-i18n="cta.getStarted">ابدأ الآن</a>
+        </div>
+      </nav>
+
+      <div class="header-right">
+        <button class="lang-toggle lang-toggle--desktop" id="langToggle" type="button" aria-label="Switch language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="lang.toggle">English</span>
+        </button>
+        <a class="signin-link" href="https://app.split.sa" data-i18n="cta.signin">تسجيل الدخول</a>
+        <a class="btn btn-primary btn-header" href="https://app.split.sa" data-i18n="cta.getStarted">ابدأ الآن</a>
+        <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="hero.badge">استأجر الآن، وادفع لاحقاً</span>
+          <h1 class="hero-title" data-i18n="hero.title">قسّم إيجارك السنوي إلى دفعات شهرية ميسّرة</h1>
+          <p class="hero-sub" data-i18n="hero.sub">سبليت منصة عقارية سعودية تتيح لك دفع الإيجار شهرياً، بينما يحصل المالك على إيجار السنة كاملاً مقدماً. لا دفعات كبيرة بعد اليوم — فقط أقساط بسيطة وواضحة.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="https://app.split.sa" data-i18n="hero.ctaPrimary">ابدأ الآن</a>
+            <a class="btn btn-ghost btn-lg" href="#how" data-i18n="hero.ctaSecondary">كيف يعمل</a>
+          </div>
+          <ul class="hero-trust">
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="hero.trust1">بدون دفعة كبيرة مقدماً</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="hero.trust2">حتى 12 قسطاً شهرياً</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="hero.trust3">رسوم واضحة بلا مفاجآت</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <img class="hero-photo" src="assets/img/image16.jpg" data-i18n-attr="alt" data-i18n="hero.photoAlt" alt="سكن عصري" />
+          <div class="hero-card" aria-hidden="false">
+            <div class="hero-card-row">
+              <span class="hc-label" data-i18n="hero.card.annual">الإيجار السنوي</span>
+              <span class="hc-value" id="hcAnnual">60,000 <span class="cur" data-i18n="sar">ريال</span></span>
+            </div>
+            <div class="hero-card-divider"><span data-i18n="hero.card.with">مع سبليت</span></div>
+            <div class="hero-card-row hero-card-row--big">
+              <span class="hc-label" data-i18n="hero.card.monthly">قسطك الشهري</span>
+              <span class="hc-value hc-value--accent" id="hcMonthly">5,250 <span class="cur" data-i18n="sar">ريال</span></span>
+            </div>
+            <div class="hero-card-bars" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <p class="hero-card-note" data-i18n="hero.card.note">12 دفعة شهرية متساوية</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOGO / TRUST STRIP ============ -->
+    <section class="strip">
+      <div class="container strip-inner">
+        <span class="strip-lead" data-i18n="strip.lead">مصمّم خصيصاً للسوق السعودي</span>
+        <div class="strip-items">
+          <span data-i18n="strip.i1">احتياج عقاري حقيقي</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span data-i18n="strip.i2">دفعات شهرية ميسّرة</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span data-i18n="strip.i3">شفافية كاملة</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span data-i18n="strip.i4">للأفراد والشركات</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="problem.kicker">المشكلة</span>
+          <h2 class="section-title" data-i18n="problem.title">دفع إيجار سنة كاملة مقدماً أمرٌ مرهق</h2>
+          <p class="section-lead" data-i18n="problem.lead">يفرض نظام الإيجار التقليدي دفعات كبيرة مقدماً، ما يشكّل عبئاً على الكثير من الأفراد والعائلات، ويؤدي إلى:</p>
+        </div>
+        <div class="cards-3">
+          <article class="card card--problem">
+            <div class="card-num">01</div>
+            <h3 data-i18n="problem.c1.t">ضغط مالي</h3>
+            <p data-i18n="problem.c1.b">الدفعات الكبيرة دفعة واحدة تستنزف المدّخرات وتحدّ من مرونتك المالية في باقي مصاريف الحياة.</p>
+          </article>
+          <article class="card card--problem">
+            <div class="card-num">02</div>
+            <h3 data-i18n="problem.c2.t">خيارات سكن محدودة</h3>
+            <p data-i18n="problem.c2.b">عدم القدرة على توفير الدفعة المقدمة يحرمك من الوصول إلى السكن الذي تريده فعلاً.</p>
+          </article>
+          <article class="card card--problem">
+            <div class="card-num">03</div>
+            <h3 data-i18n="problem.c3.t">تعثّر في التدفّق النقدي</h3>
+            <p data-i18n="problem.c3.b">دفعة واحدة ضخمة تربك ميزانيتك الشهرية وتؤخّر أهدافك في الادخار والاستثمار.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOLUTION ============ -->
+    <section class="section section--paper" id="solution">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="solution.kicker">الحل</span>
+          <h2 class="section-title" data-i18n="solution.title">استأجر الآن وادفع لاحقاً مع سبليت</h2>
+          <p class="section-lead" data-i18n="solution.lead">نتعاون مع الملّاك ومديري العقارات لنمنحك حلاً عصرياً بديلاً عن النظام التقليدي:</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-ic" data-accent="orange">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+            </div>
+            <h3 data-i18n="solution.f1.t">وزّع دفعات الإيجار</h3>
+            <p data-i18n="solution.f1.b">حوّل إيجارك السنوي إلى أقساط شهرية مريحة تناسب دخلك.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ic" data-accent="teal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>
+            </div>
+            <h3 data-i18n="solution.f2.t">سكن أفضل في متناولك</h3>
+            <p data-i18n="solution.f2.b">تجاوز عائق الدفعة الكبيرة المقدمة، ووسّع خياراتك بين عقارات أكثر.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ic" data-accent="orange">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7"/></svg>
+            </div>
+            <h3 data-i18n="solution.f3.t">تحكّم أفضل بميزانيتك</h3>
+            <p data-i18n="solution.f3.b">دفعات شهرية ثابتة ومتوقّعة تجعل التخطيط المالي أسهل بكثير.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ic" data-accent="teal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg>
+            </div>
+            <h3 data-i18n="solution.f4.t">تدفّق نقدي أفضل للشركات</h3>
+            <p data-i18n="solution.f4.b">قلّل الدفعات الأولية لسكن الموظفين وحسّن دورة التدفّق النقدي لشركتك.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="how.kicker">كيف يعمل</span>
+          <h2 class="section-title" data-i18n="how.title">الإيجار ببساطة، في 4 خطوات</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <div class="step-num">1</div>
+            <h3 data-i18n="how.s1.t">قدّم طلبك في دقائق</h3>
+            <p data-i18n="how.s1.b">أخبرنا عنك وعن السكن الذي ترغب به — بخطوات بسيطة وسريعة.</p>
+          </li>
+          <li class="step">
+            <div class="step-num">2</div>
+            <h3 data-i18n="how.s2.t">احصل على الموافقة</h3>
+            <p data-i18n="how.s2.b">تحقّق سريع وشفّاف من الأهلية، مع عرض واضح لقسطك قبل أي التزام.</p>
+          </li>
+          <li class="step">
+            <div class="step-num">3</div>
+            <h3 data-i18n="how.s3.t">يُدفع للمالك مقدماً</h3>
+            <p data-i18n="how.s3.b">ندفع لمالك العقار إيجار السنة كاملاً، فيطمئن الجميع.</p>
+          </li>
+          <li class="step">
+            <div class="step-num">4</div>
+            <h3 data-i18n="how.s4.t">ادفع شهرياً</h3>
+            <p data-i18n="how.s4.b">تسدّد لنا على أقساط شهرية ميسّرة طوال مدة العقد.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CALCULATOR ============ -->
+    <section class="section section--dark" id="calculator">
+      <div class="container calc-grid">
+        <div class="calc-intro">
+          <span class="kicker kicker--light" data-i18n="calc.kicker">شفافية مطلقة</span>
+          <h2 class="section-title section-title--light" data-i18n="calc.title">اعرف قسطك الشهري فوراً</h2>
+          <p class="section-lead section-lead--light" data-i18n="calc.sub">لا تكاليف خفية ولا مفاجآت. حرّك المؤشّر لترى بالضبط ما ستدفعه كل شهر.</p>
+          <ul class="calc-points">
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="calc.p1">رسوم خدمة واضحة وشاملة للضريبة</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="calc.p2">تعرف الإجمالي قبل أن تبدأ</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="calc.p3">دون الحاجة لتحميل أي تطبيق</span></li>
+          </ul>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-field">
+            <label for="rentRange" data-i18n="calc.annual">الإيجار السنوي (ريال)</label>
+            <output id="rentOut" class="calc-out">60,000</output>
+            <input type="range" id="rentRange" min="20000" max="200000" step="1000" value="60000" />
+            <div class="range-ends"><span>20,000</span><span>200,000</span></div>
+          </div>
+
+          <div class="calc-field">
+            <label for="monthsRange" data-i18n="calc.months">عدد الأقساط</label>
+            <output id="monthsOut" class="calc-out">12</output>
+            <input type="range" id="monthsRange" min="3" max="12" step="1" value="12" />
+            <div class="range-ends"><span>3</span><span>12</span></div>
+          </div>
+
+          <div class="calc-result">
+            <div class="calc-monthly">
+              <span class="cr-label" data-i18n="calc.monthly">قسطك الشهري</span>
+              <span class="cr-amount"><span id="resMonthly">5,250</span> <span class="cur" data-i18n="sar">ريال</span></span>
+            </div>
+            <div class="calc-break">
+              <div><span data-i18n="calc.fee">رسوم الخدمة (شاملة الضريبة)</span><b id="resFee">3,000 <span class="cur" data-i18n="sar">ريال</span></b></div>
+              <div><span data-i18n="calc.total">الإجمالي المستحق</span><b id="resTotal">63,000 <span class="cur" data-i18n="sar">ريال</span></b></div>
+            </div>
+          </div>
+          <p class="calc-disclaimer" data-i18n="calc.disclaimer">قيمة تقديرية فقط وتخضع للأهلية والموافقة النهائية. الرسوم النهائية تُعرض قبل توقيع العقد.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY SPLIT ============ -->
+    <section class="section section--paper" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="why.kicker">لماذا سبليت</span>
+          <h2 class="section-title" data-i18n="why.title">مصمّمون لهدف واحد: إيجارك</h2>
+        </div>
+        <div class="cards-3">
+          <article class="card card--why">
+            <div class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+            <h3 data-i18n="why.c1.t">تركيز على الإيجار</h3>
+            <p data-i18n="why.c1.b">تخصّصنا في دفعات الإيجار يتيح لنا تقديم منصة مصمّمة بدقة وسهلة الاستخدام.</p>
+          </article>
+          <article class="card card--why">
+            <div class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+            <h3 data-i18n="why.c2.t">التزام بالقدرة على التحمّل</h3>
+            <p data-i18n="why.c2.b">خطط أقساط ميسّرة ورسوم منخفضة وشفافة، حتى يبقى السكن في متناولك.</p>
+          </article>
+          <article class="card card--why">
+            <div class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
+            <h3 data-i18n="why.c3.t">نهج تقني متطوّر</h3>
+            <p data-i18n="why.c3.b">نوظّف التقنية لتبسيط عملية الدفع بالكامل للمستأجرين والملّاك على حدّ سواء.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TARGET MARKET ============ -->
+    <section class="section" id="market">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="market.kicker">لمن صُمّم؟</span>
+          <h2 class="section-title" data-i18n="market.title">يناسب طريقة حياتك</h2>
+        </div>
+        <div class="cards-3">
+          <article class="persona">
+            <img src="assets/img/image9.jpg" data-i18n-attr="alt" data-i18n="market.c1.t" alt="" />
+            <div class="persona-body">
+              <h3 data-i18n="market.c1.t">المهنيون العاملون</h3>
+              <p data-i18n="market.c1.b">أفراد وعائلات يفضّلون دفعات شهرية يمكن إدارتها لتحسين تدفّقهم النقدي.</p>
+            </div>
+          </article>
+          <article class="persona">
+            <img src="assets/img/image12.jpg" data-i18n-attr="alt" data-i18n="market.c2.t" alt="" />
+            <div class="persona-body">
+              <h3 data-i18n="market.c2.t">القادمون الجدد للمدينة</h3>
+              <p data-i18n="market.c2.b">من انتقلوا حديثاً وقد لا تتوفّر لديهم سيولة فورية لدفعة مقدمة كبيرة.</p>
+            </div>
+          </article>
+          <article class="persona">
+            <img src="assets/img/image5.jpg" data-i18n-attr="alt" data-i18n="market.c3.t" alt="" />
+            <div class="persona-body">
+              <h3 data-i18n="market.c3.t">عملاء الشركات</h3>
+              <p data-i18n="market.c3.b">شركات تبحث عن حلول سكن مرنة لموظفيها مع تدفّق نقدي أفضل.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOR OWNERS ============ -->
+    <section class="section section--dark owners" id="owners">
+      <div class="container owners-grid">
+        <div class="owners-copy">
+          <span class="kicker kicker--light" data-i18n="owners.kicker">للملاك والوسطاء</span>
+          <h2 class="section-title section-title--light" data-i18n="owners.title">احصل على إيجار السنة كاملاً، مقدماً</h2>
+          <p class="section-lead section-lead--light" data-i18n="owners.body">اعرض عقارك مع سبليت واستلم إيجارك السنوي فوراً، بينما يدفع المستأجر لنا شهرياً. أقل عناءً، إشغال أسرع، وتدفّق نقدي مضمون.</p>
+          <ul class="owners-list">
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="owners.l1">إيجار السنة كاملاً مقدماً</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="owners.l2">إشغال أسرع لوحداتك</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="owners.l3">بلا متاعب التحصيل الشهري</span></li>
+            <li><svg class="ic-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="owners.l4">عقود وإجراءات سلسة</span></li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="owners.html" data-i18n="owners.cta">كن شريكاً معنا</a>
+        </div>
+        <div class="owners-visual">
+          <img src="assets/img/image7.jpg" data-i18n-attr="alt" data-i18n="owners.imgAlt" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / MISSION / VISION ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="about.kicker">من نحن</span>
+          <h2 class="section-title" data-i18n="about.title">نجعل الإيجار أكثر عدلاً وسهولة</h2>
+          <p class="section-lead" data-i18n="about.body">سبليت شركة تقنية عقارية ناشئة مكرّسة لتقديم حلول دفع إيجار مرنة وسهلة المنال للمستأجرين. خدمتنا الأساسية «استأجر الآن، وادفع لاحقاً» تمكّن المستأجرين من تقسيم دفعة الإيجار السنوية إلى أقساط شهرية ميسّرة، لتمنحهم مرونة مالية وراحة بال، ولنبني سوقاً عقارياً أكثر صحّة وشمولاً للمستأجرين والملّاك معاً.</p>
+        </div>
+        <div class="mv-grid">
+          <article class="mv-card">
+            <div class="mv-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></div>
+            <h3 data-i18n="mission.t">رسالتنا</h3>
+            <p data-i18n="mission.b">تمكين المستأجرين بمرونة مالية وراحة بال عبر حلول دفع مبتكرة وسهلة المنال، وبناء سوق إيجاري أكثر عدلاً وشمولاً يفيد المستأجرين والملّاك على حدّ سواء.</p>
+          </article>
+          <article class="mv-card">
+            <div class="mv-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <h3 data-i18n="vision.t">رؤيتنا</h3>
+            <p data-i18n="vision.b">مستقبل يصبح فيه عبء دفعات الإيجار الكبيرة المقدمة من الماضي. نطمح أن نكون المزوّد الرائد لحلول دفع الإيجار المرنة، ونحوّل تجربة الإيجار إلى الأفضل.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--paper" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head">
+          <span class="kicker" data-i18n="faq.kicker">الأسئلة الشائعة</span>
+          <h2 class="section-title" data-i18n="faq.title">إجابات لأهمّ أسئلتك</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">ما هي خدمة «استأجر الآن، وادفع لاحقاً»؟</summary>
+            <div class="faq-a"><p data-i18n="faq.a1">هي خدمة تتيح لك دفع إيجارك السنوي على أقساط شهرية بدلاً من دفعة واحدة كبيرة، بينما يحصل المالك على إيجار السنة كاملاً مقدماً.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">كم تبلغ التكلفة؟</summary>
+            <div class="faq-a"><p data-i18n="faq.a2">نحتسب رسوم خدمة بسيطة وواضحة على كل عملية دفع تتم عبر منصتنا. تُعرض الرسوم والإجمالي بالكامل قبل أي التزام، بلا أي تكاليف خفية.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">من يمكنه التقديم؟</summary>
+            <div class="faq-a"><p data-i18n="faq.a3">يمكن التقديم لكل سعودي أو مقيم على رأس عمل بدخل شهري ثابت لا يقل عن 5,000 ريال، وبإيجار سنوي يبدأ من 20,000 ريال. ويظل القبول النهائي خاضعاً لتحقّق سريع من الأهلية.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">هل أحتاج إلى تطبيق لاستخدام الخدمة؟</summary>
+            <div class="faq-a"><p data-i18n="faq.a4">لا. يمكنك معرفة أهليتك وقسطك الشهري والبدء بالكامل عبر الموقع، وسيتوفّر تطبيق الجوال أيضاً لإدارة دفعاتك بسهولة.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">هل النموذج قائم على الشفافية والتوافق؟</summary>
+            <div class="faq-a"><p data-i18n="faq.a5">نلتزم بنموذج قائم على رسوم خدمة واضحة وشفافة، ونعمل على مواءمته مع المتطلبات الشرعية والتنظيمية في المملكة.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">كيف أدفع كل شهر؟</summary>
+            <div class="faq-a"><p data-i18n="faq.a6">عبر وسائل دفع آمنة ومألوفة مثل مدى والبطاقات وApple Pay، مع تذكيرات وإيصالات واضحة لكل دفعة.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band" id="contact">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <h2 data-i18n="cta.title">انضمّ إلينا لنغيّر طريقة الإيجار</h2>
+        <p data-i18n="cta.body">تواصل مع سبليت اليوم لتعرف كيف يمكننا مساعدتك على تحقيق أهدافك المالية.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="https://app.split.sa" data-i18n="cta.getStarted">ابدأ الآن</a>
+          <a class="btn btn-ghost btn-lg btn-ghost--light" href="https://app.split.sa" data-i18n="cta.signin">تسجيل الدخول</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/logos/logo-horizontal-white.svg" alt="Split" />
+        <p data-i18n="footer.tagline">استأجر الآن، وادفع لاحقاً — مرونة مالية لكل مستأجر في المملكة.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product">
+        <h4 data-i18n="footer.product">المنتج</h4>
+        <a href="#how" data-i18n="nav.how">كيف يعمل</a>
+        <a href="#calculator" data-i18n="nav.calculator">احسب قسطك</a>
+        <a href="#why" data-i18n="nav.why">لماذا سبليت</a>
+        <a href="owners.html" data-i18n="nav.owners">للملاك</a>
+      </nav>
+      <nav class="footer-col" aria-label="Company">
+        <h4 data-i18n="footer.company">الشركة</h4>
+        <a href="#about" data-i18n="nav.about">من نحن</a>
+        <a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a>
+        <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact">تواصل</h4>
+        <a href="mailto:hello@split.sa">hello@split.sa</a>
+        <a href="tel:+966500000000"><bdi dir="ltr">+966 50 000 0000</bdi></a>
+        <div class="footer-social">
+          <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h3l-7 8 8 12h-6l-5-7-6 7H2l8-9L2 2h7l4 6 5-6z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5A2 2 0 112.5 5.5 2 2 0 014.5 3.5zM3 8h3v13H3zM9 8h3v2a3.3 3.3 0 013-2c3 0 4 2 4 5v8h-3v-7c0-2-1-3-2.5-3S13 16 13 18v3h-3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span data-i18n="footer.rights">© 2026 سبليت. جميع الحقوق محفوظة.</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="footer.privacy">سياسة الخصوصية</a>
+        <a href="#" data-i18n="footer.terms">الشروط والأحكام</a>
+        <button class="lang-toggle lang-toggle--footer" id="langToggleFooter" type="button">
+          <span data-i18n="lang.toggle">English</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
