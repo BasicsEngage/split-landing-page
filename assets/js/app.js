@@ -116,7 +116,7 @@
       'owners.kicker': 'للملاك والوسطاء', 'owners.title': 'احصل على إيجار السنة كاملاً، مقدماً',
       'owners.body': 'اعرض عقارك مع سبليت واستلم إيجارك السنوي فوراً، بينما يدفع المستأجر لنا شهرياً. أقل عناءً، إشغال أسرع، وتدفّق نقدي مضمون.',
       'owners.l1': 'إيجار السنة كاملاً مقدماً', 'owners.l2': 'إشغال أسرع لوحداتك', 'owners.l3': 'بلا متاعب التحصيل الشهري', 'owners.l4': 'عقود وإجراءات سلسة',
-      'owners.cta': 'كن شريكاً معنا', 'owners.imgAlt': 'مبنى عصري',
+      'owners.cta': 'اعرض عقارك لدينا', 'owners.imgAlt': 'مبنى عصري',
 
       'about.kicker': 'من نحن', 'about.title': 'نجعل الإيجار أكثر عدلاً وسهولة',
       'about.body': 'سبليت شركة تقنية عقارية ناشئة مكرّسة لتقديم حلول دفع إيجار مرنة وسهلة المنال للمستأجرين. خدمتنا الأساسية «استأجر الآن، وادفع لاحقاً» تمكّن المستأجرين من تقسيم دفعة الإيجار السنوية إلى أقساط شهرية ميسّرة، لتمنحهم مرونة مالية وراحة بال، ولنبني سوقاً عقارياً أكثر صحّة وشمولاً للمستأجرين والملّاك معاً.',
@@ -248,7 +248,7 @@
       'owners.kicker': 'For owners & brokers', 'owners.title': "Get the full year's rent, upfront",
       'owners.body': 'List with Split and receive your annual rent immediately, while your tenant pays us monthly. Less hassle, faster occupancy, guaranteed cash flow.',
       'owners.l1': 'Full annual rent upfront', 'owners.l2': 'Faster occupancy for your units', 'owners.l3': 'No monthly collection headaches', 'owners.l4': 'Smooth contracts and procedures',
-      'owners.cta': 'Partner with us', 'owners.imgAlt': 'Modern building',
+      'owners.cta': 'List your property with us', 'owners.imgAlt': 'Modern building',
 
       'about.kicker': 'Who we are', 'about.title': "We're making renting fairer and simpler",
       'about.body': 'Split is a PropTech startup dedicated to flexible, accessible rent-payment solutions for tenants. Our core service, “Rent Now, Pay Later,” empowers renters to break their annual rent into manageable monthly installments — offering financial flexibility and peace of mind, and building a healthier, more inclusive rental market for tenants and owners alike.',
